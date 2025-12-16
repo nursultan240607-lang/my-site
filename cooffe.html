@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Café - Home</title>
+    <style>
+        body { font-family: Arial; margin: 0; background: #f4f1ea; }
+        header, footer { background: #6b4f3a; color: white; text-align: center; padding: 20px; }
+        nav { background: #cbb294; text-align: center; padding: 15px; }
+        nav a { margin: 0 15px; color: #3b2f2f; text-decoration: none; font-weight: bold; }
+
+        /* ←←← ЗДЕСЬ САМОЕ ВАЖНОЕ – НОВОЕ ФОТО КОФЕ */
+        .hero { 
+            background: url('https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg') center/cover; 
+            height: 350px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            color: white; 
+            font-size: 40px; 
+            text-shadow: 0 0 10px black;
+        }
+
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+
+        .btn {
+            background: #6b4f3a; padding: 12px 20px; color: white;
+            text-decoration: none; border-radius: 8px; display: inline-block;
+            margin-top: 15px; cursor: pointer; transition: 0.3s;
+        }
+        .btn:hover { background: #8b6547; }
+    </style>
+</head>
+<body>
+
+<header><h1>Cozy Café</h1></header>
+
+<nav>
+    <a href="file:///C:/Users/User/Downloads/uxd5portfolio/uxd5portfolio/cooffe.html">Home</a>
+    <a href="file:///C:/Users/User/Downloads/uxd5portfolio/uxd5portfolio/About.html">About</a>
+    <a href="file:///C:/Users/User/Downloads/uxd5portfolio/uxd5portfolio/menu.html">Menu</a>
+    <a href="file:///C:/Users/User/Downloads/uxd5portfolio/uxd5portfolio/Contact.html">Contact</a>
+</nav>
+
+<div class="hero">Welcome to Cozy Café!</div>
+
+<div class="container">
+    <h2 id="titleText">Enjoy the Best Coffee in Town</h2>
+    <p>Welcome to Cozy Café — a warm and friendly place where you can enjoy fresh coffee, delicious desserts, 
+       and perfect atmosphere.</p>
+
+    <div class="btn" onclick="learnMore()">Learn More</div>
+</div>
+
+<footer>© 2025 Cozy Café</footer>
+
+<script>
+// Smooth fade-in title
+window.onload = () => {
+    const title = document.getElementById("titleText");
+    title.style.opacity = 0;
+    title.style.transition = "opacity 2s";
+    setTimeout(() => { title.style.opacity = 1; }, 300);
+};
+
+// Button interaction
+function learnMore() {
+    alert("Welcome! Explore our menu and discover the best coffee in town.");
+}
+</script>
+
+</body>
+</html>
